@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIStema</title>
+<script type="text/javascript">
+
+const centroX1 = 300;
+const centroY1 = 300;
+const centroX2 = 900;
+const centroY2 = 300;
+const centroX3 = 300;
+const centroY3 = 900;
+const centroX4 = 900;
+const centroY4 = 900;
+const orbt_sz = 250;       
+const orbl_sz = 30;  
+const sun_sz = 50;         
+const lue_sz = 10;         
+const terre_sz = 15;        
+const tau = 2 * Math.PI;    
+const t_terre = 30;         
+const t_lue = 1;            
+
+const sun = new Path2D();
+const lue = new Path2D();
+const terre = new Path2D();
+
+function init() {
+    sun.arc(0,0,sun_sz,0,6.29,false);
+    lue.arc(0,0,lue_sz,0,6.29,false);
+    terre.arc(0,0,terre_sz,0,6.29,false);
+    window.requestAnimationFrame(draw);
+}
+
+function draw() {
+    const ctx = document.getElementById('canvas').getContext('2d');  
+
+
+    ctx.fillRect(0, 0, 1200, 1200); 
+
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+    ctx.save();
+
+        // terre
+        ctx.translate(centroX1, centroY1);   
+        
+        const time = new Date();
+        ctx.rotate((tau/t_terre) * time.getSeconds() + (tau/(t_terre*1000)) * time.getMilliseconds());
+        ctx.translate(250, 0);     
+
+        ctx.fillStyle = '#40E0D0';
+        ctx.fill(terre); 
+
+        // lue
+        ctx.save();
+            ctx.rotate((tau/t_lue) * time.getSeconds() + (tau/(t_lue*1000)) * time.getMilliseconds());
+            ctx.translate(0, orbl_sz);
+            ctx.fillStyle = '#00CED1';
+            ctx.fill(lue);
+        ctx.restore();  
+
+    ctx.restore();  
+
+    // sun
+    ctx.save();
+        ctx.translate(centroX1, centroY1);
+        ctx.fillStyle = 'pink';
+        ctx.fill(sun);
+    ctx.restore();
+
+    ctx.save();
+
+        // terre2
+        ctx.translate(centroX2, centroY2);  
+
+        ctx.rotate((tau/t_terre) * time.getSeconds() + (tau/(t_terre*1000)) * time.getMilliseconds());
+        ctx.translate(250, 0);   
+
+        ctx.fillStyle = '#FFE4E1';
+        ctx.fill(terre); 
+
+        // lue2
+        ctx.save();
+            ctx.rotate((tau/t_lue) * time.getSeconds() + (tau/(t_lue*1000)) * time.getMilliseconds());
+            ctx.translate(0, orbl_sz);
+            ctx.fillStyle = '#FA8072';
+            ctx.fill(lue);
+        ctx.restore();  
+
+    ctx.restore(); 
+
+    // sun2
+    ctx.save();
+        ctx.translate(centroX2, centroY2);
+        ctx.fillStyle = '#8B008B';
+        ctx.fill(sun);
+    ctx.restore();
+
+    ctx.save();
+
+        // terre3
+        ctx.translate(centroX3, centroY3);    
+
+        ctx.rotate((tau/t_terre) * time.getSeconds() + (tau/(t_terre*1000)) * time.getMilliseconds());
+        ctx.translate(250, 0);  
+
+        ctx.fillStyle = '#FF00FF';
+        ctx.fill(terre); 
+
+        // lue3
+        ctx.save();
+            ctx.rotate((tau/t_lue) * time.getSeconds() + (tau/(t_lue*1000)) * time.getMilliseconds());
+            ctx.translate(0, orbl_sz);
+            ctx.fillStyle = '#DA70D6';
+            ctx.fill(lue);
+        ctx.restore(); 
+
+    ctx.restore(); 
+
+    // sun3
+    ctx.save();
+        ctx.translate(centroX3, centroY3);
+        ctx.fillStyle = '#800000';
+        ctx.fill(sun);
+    ctx.restore();
+
+    ctx.save();
+
+// terre4
+ctx.translate(centroX4, centroY4);    
+
+ctx.rotate((tau/t_terre) * time.getSeconds() + (tau/(t_terre*1000)) * time.getMilliseconds());
+ctx.translate(250, 0);     
+
+ctx.fillStyle = '#DC143C';
+ctx.fill(terre); 
+
+// lue4
+ctx.save();
+    ctx.rotate((tau/t_lue) * time.getSeconds() + (tau/(t_lue*1000)) * time.getMilliseconds());
+    ctx.translate(0, orbl_sz);
+    ctx.fillStyle = '#B22222';
+    ctx.fill(lue);
+ctx.restore();  
+
+ctx.restore();  
+
+// sun4
+ctx.save();
+ctx.translate(centroX4, centroY4);
+ctx.fillStyle = '#FA8072';
+ctx.fill(sun);
+ctx.restore();
+
+
+    window.requestAnimationFrame(draw);
+}
+
+init();
+
+</script>
+
+</head>
+<body>
+    <canvas id="canvas" width="1200" height="1200"></canvas>
+</body>
+</html>

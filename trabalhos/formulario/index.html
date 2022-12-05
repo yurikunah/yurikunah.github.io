@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario Pra virar egirl</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validate.js" defer></script>
+</head>
+<body>
+
+  <h1>Rolê na Liberdade</h1>
+<form action="javascript:alert('formulario aprovado para envio')" method="post" id="formu">
+  <p> Dados de Login more: </p>
+  <label for="uid">Usuarie:</label>                    <input type="text" name="uid" id="uid" pattern="[A-Za-z0-9]+" required placeholder="Nome Social"/> 
+  <label for="tel">Telefone:</label>                    <input type="text" name="tel" id="tel" minlength="14" maxlength="15" required placeholder="(**)*****-****"/> 
+  <label for="email">E-mail:</label>                   <input type="email" name="email" id="email" required placeholder="@gmail.com"/>
+  <label for="pwp">Senha:</label>                      <input type="password" name="pwp" id="pwp" pattern="(?=(.*[0-9]))((?=.*[A-Za-z0-9]))"  required placeholder="******"/>
+  <label for="pwp2">Confirmar Senha:</label>           <input type="password" name="pwp2" id="pwp2"  required placeholder="******"/>
+
+  <p> Dados Pessoais Boneca: </p>
+  <label for="nome">Apelido de Praça:</label>           <input type="text" name="nome" id="nome" required placeholder="Belle Bellinha"/>
+  <label for="cpf">Cpf falso:</label>                   <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14" required placeholder="***.***.***-**"/>
+  <label for="Mons">Confirmo gostar de monsters</label>       <input type="checkbox" id="Mons" name="Mons"checked> 
+  <label for="diaa">Data de Nascimento falsa:</label>    <input type="date" id="diaa" name="diaa">    
+  <label for="cor">Cor do seu cabelo</label>                  <input type="color" id="cor" name="cor">
+  <label for="sex">Sexualidade:      </label>                 
+  <label for="op1">Yag<INPUT TYPE="RADIO" NAME="sex" VALUE="op1"> </label>
+  <label for="op2"> Nao Binarie<INPUT TYPE="RADIO" NAME="sex" VALUE="op2"></label>
+  <label for="op3">Bate bife<INPUT TYPE="RADIO" NAME="sex" VALUE="op3"> </label>
+  <input type="submit"> </input>  
+ </form>
+</body>
+</html>

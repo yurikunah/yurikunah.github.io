@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(./imagens/fundosite.jpg);
+    background-size: calc(300vmin);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s all;
+}
+
+.titulocreditos{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.textocreditos{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+#placeholder{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#placeholder img{
+    width: 600px;
+    height: 600px;
+    margin: 30px;
+    border: solid 5px #525252;
+    border-radius: 100px; 
+}
+
+.titulotrabalho{
+    color: #525252;
+    margin-left: 20px;
+}
+
+.header{
+    text-align: center;
+    color: #525252;
+    background-color: #cecece80;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 2px 2px 30px rgb(124, 77, 124);
+}
+.titulo{
+    padding: 0px;
+    font-size: 50px;
+}
+
+.container{
+    background-color: #8400ff;
+    margin-bottom: 100px;
+} 
+
+.trabalho{
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #cecece;
+    box-shadow: 5px 5px 50px #ffffff;
+}
+
+.descricaotrabalho{
+    margin-left: 50px;
+    color: #525252;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.perfil{
+    background-color: #cecece80;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 50px #ffffff;
+    backdrop-filter: blur(10px);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.cred {
+    background-color: #50445c7e;
+    padding-bottom: 60px;
+}
+.banner{
+    width: 100%;
+    height: 190px;
+    border-radius: 12px;
+
+}
+
+.entrartrabalho{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fa8bed;
+    background-color: #dddddd;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 1s;
+    margin-right: 80px;
+}
+
+.entrartrabalho:hover{
+    transition: 1s;
+    color: #fa8bed;
+    background-color: #a3a3a3;
+}
+.descricao{
+    color: #525252;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.voltar{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+.voltar:hover{
+    color: #fa8bed;
+    transition: 0.6s;
+}
+
+.fotoperfil{
+    width: 200px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -460px;
+    border-radius: 12px;
+}
+
+.perfilconteudo{
+    width: 800px;
+    margin-top: 40px;
+}
+
+.meunome{
+    margin-left: 100px;
+    color: #525252;
+    margin-top: 10px;
+}
+
+.trabalhos{
+    text-decoration: none;
+    color: #fa8bed;
+    background-color: #dddddd;
+    font-size: 16pt;
+    padding: 12px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.trabalhos:hover{
+    transition: 1s;
+    color: #fa8bed;
+    background-color: #a3a3a3;
+}
+
+.creditos{
+    text-decoration: none;
+    font-size: 16pt;
+    padding: 12px;
+    margin: 10px;
+    color: #fa8bed;
+    background-color: #dddddd;
+    border-radius: 20px;
+    transition: 1s;
+    position: relative;
+    top: -12px;
+    box-shadow: 2px 2px 30px rgba(124, 77, 124, 0.493);
+
+}
+
+.creditos:hover{
+    transition: 1s;
+    color: #fa8bed;
+    background-color: #a3a3a3;
+}
+
+#link-titulo {
+    text-decoration: none;
+
+}
+
+#trabalhos-wrapper{
+    margin: auto;
+    margin-top: 100px;
+}
+iframe{
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #fa8bed;
+    backdrop-filter: blur(12px);
+    box-shadow: 2px 2px 30px rgb(124, 77, 124);
+}
+
+main{
+    margin: auto;
+    width: calc(100vw - 200px);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        min-width: 500px;
+        background-size: 2000px;
+        transition: 0.4s all;
+    }
+}

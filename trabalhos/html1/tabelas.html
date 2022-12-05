@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TABELAS</title>
+</head>
+<body>
+<header id="topo"> 
+<nav>
+<a href="index.html">Índice</a> |
+<a href="formatos.html">Formatação de texto</a> |
+<a href="artigo.html">Artigo</a> |
+<a href="listas.html">Listas</a> |
+<a href="tabelas.html">Tabelas</a>
+</nav>
+</header>
+
+<aside>
+<ul>
+<li><a href="#tabela simples">Tabela simples</a></li>
+<li><a href="#tabela coluna dupla">Tabela com coluna dupla</a></li>
+<li><a href="#tabela tripla e coluna dupla">Tabela com linha tripla e coluna dupla</a></li>
+</ul>
+</aside>
+
+<section id="content">
+
+<table>
+<h2>Tabelas:</h2>
+<p id="tabela simples"></p>
+<h2>Tabela simples:</h2> 
+<tr><th>Amigos</th> <th>Nota 1</th> <th>Nota 2</th> </tr>
+<tr><td>orca</td><td>8,0</td> <td>10,0</td> </tr>
+<tr><td>Foca</td><td>11,5</td> <td>9,0</td> </tr>
+<tr><td>Urso polar</td><td>10,0</td> <td>9,0</td> </tr>
+</table>
+
+<p id="tabela coluna dupla"></p>
+<table>
+<h2>Tabela com coluna dupla: </h2>
+<tr><th>Bonitos</th> <th colspan="2">Notas</th> </tr>
+<tr><td>Gatos  </td><td>1000,0</td> <td>1000,0</td> </tr>
+<tr><td>Coelhos</td><td>1000,0</td> <td>1000,0</td> </tr>
+<tr><td>Porquin índia </td><td>1000,0</td> <td>1000,0</td> </tr>
+</table>
+
+<p id="tabela tripla e coluna dupla"></p>
+<main>
+<h2>Tabela com linha tripla e coluna dupla:</h2>
+<table>
+	<tr><th>Caras</th>				<th colspan="2">Notas</th>	</tr>
+	<tr><td rowspan="3">Pedro</td>	<td>-10,5</td><td>10,0</td>	</tr>		
+	<tr>							<td>0,0</td><td>8,5</td>	</tr>
+	<tr>							<td>-8,9</td><td>9,9</td>	</tr>
+	<tr><td rowspan="3">Renato</td><td>-50,5</td><td>7,5</td>	</tr>	
+	<tr>							<td>2,7</td><td>4,3</td>	</tr>	
+	<tr>							<td>-4,5</td><td>50,0</td>	</tr>
+	<tr><td rowspan="3">Gabriel</td><td>70,0</td><td>5,5</td>	</tr>
+	<tr>							<td>9,0</td><td>8,2</td>	</tr>	
+	<tr>							<td>8,7</td><td>10,5</td>	</tr>
+</table> 
+		
+</body>
+
+</main>
+<footer>
+<address>
+<p><strong>CEDUP Dario Geraldo Salles:</strong> R. Monsenhor Gercino, 2071 - Itaum,
+Joinville - SC, 89210-160</p>
+<p>2021 - <a href="#topo">Voltar para o topo</a><br /></p>
+</address>
+</footer>
+</body> 
+</html>

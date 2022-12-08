@@ -181,7 +181,7 @@ body{
     font-size: 16pt;
     padding: 12px;
     margin: 10px;
-    color: #fa8bed;
+    color: black;
     background-color: #dddddd;
     border-radius: 20px;
     transition: 1s;
@@ -199,7 +199,7 @@ body{
 
 #link-titulo {
     text-decoration: none;
-
+    color: darkred;
 }
 
 #trabalhos-wrapper{
